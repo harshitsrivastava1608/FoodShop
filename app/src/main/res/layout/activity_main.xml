@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#b7b7a4">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:id="@+id/rvHH"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:foregroundGravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:background="#cec1d6"
+            android:id="@+id/rvH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_shop"
+            android:scrollbars="horizontal"
+            android:scrollIndicators="start"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treat your taste buds today"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/heading"
+        android:layout_below="@+id/rvHH"
+        android:background="#cfb53b"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rvV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        tools:listitem="@layout/item_shop"
+
+        />
+    </RelativeLayout>
+</RelativeLayout>
