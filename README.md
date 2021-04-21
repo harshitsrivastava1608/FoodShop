@@ -1,3 +1,3 @@
 # FoodShop
-Android App to practice network requests and recycler view
-<img src="unnamed.jpg" height="400" width="400">
+Android App to practice network requests and recycler view<hr>
+<img src="unnamed.png" height="800" width="400">
